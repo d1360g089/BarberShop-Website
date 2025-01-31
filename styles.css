@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 35px;
+    margin:5px;
+
+}
+
+nav {
+    background-color: white;
+    padding: 20px;
+
+}
+
+nav a {
+    color: black;
+    margin: 10px;
+    text-decoration:underline;
+}
+
+section {
+    padding: 30x;
+
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color:dimgray;
+}
