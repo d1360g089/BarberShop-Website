@@ -7,12 +7,7 @@ body {
     border-top: 0px solid #ddd;
     top:0;
     left:0;
-    overflow: hidden;
-
-    
-
-    
-    
+    overflow: auto;
 
 }
 
@@ -71,6 +66,7 @@ nav {
     left:0;
     z-index:999;
     background-color:black;
+    
 
 
     
@@ -78,12 +74,14 @@ nav {
 }
 
 nav a {
+    
     color:white;
-    margin: 35px;
+    margin: 4px;
     transition: var(--trans,color .4s ease 0s);
     text-align: right;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: solid;
+    
 
     
 }
@@ -185,6 +183,10 @@ div {
     background: black;
     text-align: center;
     padding: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     
 }
 
@@ -211,6 +213,7 @@ div {
     border-radius: 10px;
     display: block;
     object-fit: cover;
+    max-width: 100%;
     
 
 }
@@ -420,6 +423,8 @@ footer {
 
 
 @media (max-width:500px) {
+
+
     header {
         flex-direction: column;
         align-items: center;
@@ -435,12 +440,17 @@ footer {
     nav {
         
         align-items: center;
-        position:sticky;
+        position:fixed;
         top: 90px; 
         margin:0;
         left:0;
+
     }
 
+
+
+
+    
 
 
     .gallery-heading h1 {
@@ -454,9 +464,7 @@ footer {
     }
 
 
-    .theTeam h1 {
-        font-size: 40px;
-    }
+    
 
 
     .longpar {
@@ -468,7 +476,7 @@ footer {
 
 
 button {
-    width: 80%; /* Make buttons responsive */
+    width: auto; /* Make buttons responsive */
     max-width: 300px;
 }
 
@@ -477,19 +485,15 @@ p {
     word-wrap: break-word;
 }
 
+
 nav a {
     display: inline-block;
-    margin: 10px;
-}
-
-@media (max-width: 500px) {
+    margin: 4px;
     
-    nav a {
-        margin: 4px;
-    }
+}   
 
-    
-}
+
+
 
 .googlemap{
     width:100%;
@@ -511,9 +515,10 @@ nav {
     justify-content: left;
     align-items: center;
     position:sticky;
-    top: 90px; 
+    top: 0; 
     margin:0;
     left:0;
+    z-index: 1000;
     
 }
 
