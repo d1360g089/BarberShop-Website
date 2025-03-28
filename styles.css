@@ -3,11 +3,11 @@ body {
     text-align: center;
     background-color: whitesmoke;
     margin: 0;
-    padding:10px;
+    padding:0px;
     border-top: 0px solid #ddd;
     top:0;
     left:0;
-
+    overflow: hidden;
 
     
 
@@ -15,6 +15,8 @@ body {
     
 
 }
+
+
 
 header {
     position: sticky;
@@ -28,34 +30,35 @@ header {
     justify-content: space-between;
     display: flex;
     z-index: 1000;
+    
+
+    
 
 }
 
 
 
-.social-icons{
-    position:absolute;
-    top: 10px;
-    right: 250px;
-    margin-top: 2rem
-}
+
 
 .social-icons a{
-    font-size: 24px;
-    color: #333;
-    
-}
-
-.social-icons a:hover {
     color: #e75480;
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    position: absolute;
+    top:160px;
+    right:20px;
+    
+
+
 }
 
 
 
-.logo {
-    align-items: right;
 
-}
+
+
 
 
 
@@ -92,16 +95,10 @@ div {
  
 }
 
-.home img{
-    margin-left:0rem;
-}
-
-
-
 
 .services h1{
     font-family:fantasy;
-    font-size: 100px;
+    font-size: 60px;
     color: black;
     
 
@@ -117,7 +114,7 @@ div {
 }
 
 .gallery h1{
-    font-size: 100px;
+    font-size: 60px;
     color:black;
     font-family:fantasy;
 }
@@ -130,13 +127,14 @@ div {
     margin-left: 6rem;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    max-width: 100%;
 }
 
 .gallery figcaption{
     margin-top: 3rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font: bold;
-    font-size:35px;
+    font-size:30px;
     color:black;
     
    
@@ -148,7 +146,7 @@ div {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:black;
     max-width: 100%;
-    font-size:20px;
+    font-size:17px;
     margin-top:1rem;
     
 }
@@ -177,18 +175,44 @@ div {
 
 }
 
+
+
+
+
+
+
 .theTeam {
     background: black;
-}
-
-.theteamsymbol {
-    margin-left: -40rem;
+    text-align: center;
+    padding: 40px;
     
 }
 
-.theteamsymbol2 {
-    margin-left: 40rem;
-    margin-top: -9rem;
+.team-grid {
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    
+}
+
+.team-image {
+    margin-top: 2rem;
+    width:225px;
+    height:225px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    
+
 }
 
 
@@ -196,103 +220,18 @@ div {
 .theTeam h1{
     font-family:fantasy;
     color:white;
-    font-size: 75px;
-    margin-top: -5rem;
-   
+    font-size: 50px;
+    margin-left: 0rem;
+   margin-top: -1rem;
     
 
 }
 
-.fig1{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:white;
-    margin-right: 50rem;
-    
-}
 
-.p1{
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    margin-right: 50rem;
-    color:azure
-}
-
-.image1 {
-    margin-top: 3rem;
-    margin-right: 50rem;
-    border-color:white;
-    border:3px;
-}
-
-.image2 {
-    margin-top:-33rem;
-}
-
-.fig2 {
-    margin-top: -8rem;
-    font-size: 32px;
-    font-family:'Times New Roman', Times, serif;
-    color:white;
-
-}
-
-.p2 {
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    color:azure;
-
-}
-
-.fig3 {
-    font-size: 30px;
-    color:white;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top: -8rem;
-    margin-left: 50rem;
-
-}
-
-.p3 {
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    margin-left: 50rem;
-    color:azure
-}
-
-.image3 {
-    margin-left: 50rem;
-    margin-top: -32.5rem;
-}
-
-.fig4 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color:white;
-
-}
-
-.p4 {
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    color: azure;
-
-}
-
-.image4 {
-    margin-top:-15rem;
-}
-
-
-.sissors1 {
-    margin-left: -50rem;
-    margin-top: -35rem;
-
-}
-
-.sss2 {
-    margin-left: 50rem;
-    margin-top: 5rem;
+.team-member figcaption,
+.team-member p{
+    color: white;
+    font-size: 18px;
 
 }
 
@@ -305,7 +244,7 @@ div {
     font-size: 75px;
     text-decoration: underline;
     color: black;
-    margin-right: 40rem;
+    margin-right: 0rem;
     margin-top: 2rem;
 
 }
@@ -314,7 +253,7 @@ div {
 
 .longpar {
     font-family:cursive;
-    font-size: 20px;
+    font-size: 18px;
     color:black;
     margin-top:2rem;
     margin-left: 10rem;
@@ -322,13 +261,19 @@ div {
     border: 0px;
     border-radius: 0px;
     text-align: left;
+    line-height: 1.6;
+    text-align: justify;
+    word-wrap: break-word;
+    max-width: 800px;
+    margin: 0 auto;
+
 
     
 }
 
 .heading2 {
-    margin-left:39rem;
-    margin-top: -25rem;
+    
+    margin-top: 3rem;
     color:black;
     font-size: 35px;
     text-decoration: underline;
@@ -336,8 +281,8 @@ div {
 }
 
 .heading3 {
-    margin-left:40rem;
-    margin-top: 6rem;
+
+    margin-top: 4rem;
     color:black;
     font-size: 30px;
     text-decoration: underline;
@@ -345,8 +290,8 @@ div {
 }
 
 .par1 {
-    margin-left: 40rem;
-    margin-top: 3rem;
+    
+    margin-top: 2rem;
     color:black;
     font-size: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -357,7 +302,6 @@ div {
 
 .par2 {
     margin-top: 2rem;
-    margin-left: 40rem;
     font-size: 25px;
     color:black;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -369,16 +313,18 @@ div {
     border-radius: 5px;
     border: 10px;
     margin-bottom: -4rem;
-   
+    max-width: 50%;
 }
 
 
 .map-divider {
     border: 5px solid black;
     margin:80px;
-    max-width: 1200px;
+    width:70%;
     color: black;
     background-color: black;
+    margin-left: 3.5rem;
+    margin-right:15rem;
     
  
  
@@ -400,11 +346,14 @@ footer {
 }
 
 
+
 .gallery-container {
     position: relative;
-    width:1323px;
-    height: 160px;
+    width:100%;
+    height: auto;
     overflow:hidden;
+    padding: 1rem;
+
 
 }
 
@@ -414,6 +363,7 @@ footer {
     object-fit: cover;  /* Ensures image maintains aspect ratio while filling the container */
     object-position: top;
     filter: blur(1.2px);
+    max-width: 100%;
     
 
 }
@@ -437,7 +387,7 @@ footer {
 
 
 .gallery-img-p h4{
-    margin-left:7rem;
+    margin-left:2rem;
     text-align: left;
     margin-top: 3rem;
     font-size: 30px;
@@ -447,7 +397,7 @@ footer {
 }
 
 .gallery-img-p p{
-    margin-left: 7rem;
+    margin-left: 2rem;
     text-align:left;
     color:black;
     font-size:17px;
@@ -464,5 +414,112 @@ footer {
     border:#242526;
     padding:10px;
     border-radius: 5px;
+    max-width: 100%;
+    
+}
+
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: 90px;
+        top:0px;
+        left:0;
+        position: sticky;
+        
+    }
+
+    
+
+    nav {
+        
+        align-items: center;
+        position:sticky;
+        top: 90px; 
+        margin:0;
+        left:0;
+    }
+
+
+
+    .gallery-heading h1 {
+        font-size: 70px; /* Smaller font size for smaller screens */
+        padding: 20px;
+    }
+
+    .gallery img {
+        margin: 1rem;
+        width: 100%; /* Make images take up full width */
+    }
+
+
+    .theTeam h1 {
+        font-size: 40px;
+    }
+
+
+    .longpar {
+        font-size: 16px;
+        padding:10px;
+    }
+}
+
+
+
+button {
+    width: 80%; /* Make buttons responsive */
+    max-width: 300px;
+}
+
+p {
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+}
+
+@media (max-width: 500px) {
+    
+    nav a {
+        margin: 4px;
+    }
+
+    
+}
+
+.googlemap{
+    width:100%;
+    height:250px;
+    max-width: 1000px;
+}
+
+
+
+.gallery img{
+    width: 100%; 
+    max-width: 200px; /* Prevents them from becoming too large */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    position:sticky;
+    top: 90px; 
+    margin:0;
+    left:0;
+    
+}
+
+nav a {
+    padding: 5px;
+    font-size: 17px;
+    text-align: center;
     
 }
